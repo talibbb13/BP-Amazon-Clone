@@ -1,0 +1,55 @@
+
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica&family=Roboto:ital,wght@1,300&family=Ubuntu&display=swap');
+
+.d_flex {
+  display: flex;
+}
+
+.content_center {
+  justify-content: center;
+}
+
+.item_center {
+  align-items: center;
+}
+
+.bg_black {
+  background-color: black;
+}
+
+.t_white {
+  color: white;
+}
+
+.t_black {
+  color: black;
+}
+
+.font_light {
+  font-weight: 300;
+}
+.font_bold {
+  font-weight: 900;
+}
+
+.content_end {
+  justify-content: flex-end;
+}
+.content_start {
+  justify-content: flex-start;
+}
+.between {
+  justify-content: space-between;
+}
+
+.hideen_content {
+  visibility: hidden;
+}
+
+
+f_left {
+  float: left;
+}
+f_right {
+  float: right;
+}

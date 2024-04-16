@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  <!-- Font Awesome Liaberies -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- OUR PERSONAL STYLINGS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="utility.css">
+  <title>Amazon Clone</title>
+</head>
+
+<body>
+  <!-- OUR CODING STARTS FROM HERE -->
+  <ul class="nav  first_nav d_flex item_center">
+    <!-- AMAZON LOGO ON SIDE OF THE BAR -->
+    <img class="az-logo" src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="Amazon_Logo">
+    <!-- DELIVER TO INDIA TEXT BESIDE THE AMAZON LOGO -->
+    <button class="button t_white"><i>&nbsp; </i><span class="font_light">Deliver to</span> <br><span class="fas fa-map-marker-alt"> &nbsp;<b>India</b></span></button>
+    <!-- OVERALL SEARCH BAR STARTS FROM HERE -->
+    <div class="search_bar">
+      <!-- CATEGORY OF THE SEARCH LIST -->
+      <div class="input-group">
+        <select class="form_select" aria-label="Default select example">
+          <option selected>All</option>
+          <option value="1">Arts</option>
+          <option value="2">Kitchen</option>
+          <option value="3">Baby</option>
+          <option value="4">Beauty</option>
+          <option value="5">Books</option>
+          <option value="6">Boy's</option>
+          <option value="7">Computer</option>
+          <option value="8">Deals</option>
+          <option value="9">Music</option>
+          <option value="10">Electrics</option>
+          <option value="11">Girl's</option>
+          <option value="12">Health</option>
+          <option value="13">Home</option>
+          <option value="14">Scientific</option>
+          <option value="15">Kindle</option>
+        </select>
+        <!-- SEARCH BOX -->
+        <input type="text" class="form-control search_box" aria-label="Text input with 2 dropdown buttons">
+        <!-- SEARCH ICON -->
+        <i class="fas fa-search t_black"></i>
+      </div>
+    </div>
+    <!-- LANGUAGE SWITCHING STARTS -->
+    <div class="dropdown-center">
+
+      <!-- BUTTON TRIGGER FOR DROPDOWN -->
+      <button class="us_btn btn btn-secondary dropdown-toggle" type="button" id="dropdownCenterBtn" data-bs-toggle="dropdown" aria-expanded="false">
+
+        <!-- US FLAG JUST BESIDE TRIGGER -->
+        <img class="us_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB-A4nUcqkSltojW0QarjQGp9xK8K6M9uM0Q&usqp=CAU" alt="US Flag">
+      </button>
+
+      <!-- INPUT IN DROPDOWN -->
+      <ul class="lang_switch dropdown-menu" aria-labelledby="dropdownCenterBtn">
+        Change Language &nbsp;&nbsp;<a href="#" class="learn_more font_light">Learn more</a><br><br>
+
+
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+          <label class="form-check-label" for="flexRadioDefault2">
+            English - ES
+          </label>
+        </div>
+        <hr>
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+          Espeñol - ES
+        </label><br><br>
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+          Arbic - AR
+        </label><br><br>
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+          Deutsch - DE
+        </label><br><br>
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+          Hebrew - HE
+        </label><br><br>
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+          Korea - KO
+        </label>
+        </label><br><br>
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+          Portuguesé - PT
+        </label>
+        </label><br><br>
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+          Chinese - ZH
+        </label>
+        </label><br><br>
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+          Hindi - HI
+        </label><br><br>
+        <hr>
+
+        Change currency &nbsp;&nbsp;<a href="#" class="learn_more font_light">Learn more</a><br><br>
+
+        $ - USD - US Dollar &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="learn_more font_light">Change</span><br>
+        <hr>
+        <span> <img class="us_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB-A4nUcqkSltojW0QarjQGp9xK8K6M9uM0Q&usqp=CAU" alt="US Flag"></span>&nbsp; You are Shopping on Amazon <br><br>
+
+        <div class="lang_footer d_flex content_center">Change.country/region </div>
+
+    </div>
+    <div class="dropdown sign_in">
+      <button class="btn btn-secondary dropdown-toggle sign_in_btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        <span class="font_light">Hello, Sign in</span><br><span class="font_b">Accounts and Links</span>
+      </button>
+
+      <ul class="dropdown-menu lang_switch log_in" aria-labelledby="dropdownMenuButton1">
+        <div class="d_flex content_center">
+          <button type="button" class="btn gold_btn">Sign in</button>
+        </div>
+
+        <div class="d_flex content_center gold_btn_margin">
+          <span>New customer</span>&nbsp;&nbsp;&nbsp;<span class="learn_more">Start here.</span>
+        </div>
+        <hr>
+        <ul>
+          <h4>Your List</h3>
+            <li>Creat a List</li>
+            <li>Find a List Registry</li>
+            <li>AmazonSmile Charity Lust</li>
+        </ul>
+        <div class="verticle">
+
+        </div>
+        <ul class="f_right">
+          <h3>Your Account</h3>
+          <li>Account</li>
+          <li>Order</li>
+          <li>Recommendation</li>
+          <li>Browsing History</li>
+          <li>WatchList</li>
+          <li>Video Purchase and Rentals</li>
+          <li>Kindle Unlimited</li>
+          <li>Cintent and Devices</li>
+          <li>Subscribe and Save Items</li>
+          <li>Memberships and Subscriptions</li>
+          <li>Music Library</li>
+        </ul>
+      </ul>
+    </div>
+    <div class="return t_white">
+      <span class="font_light">Return</span><br><span class="font_bold">& Orders</span>
+    </div>
+    <div class="cart">
+      <i class="fas fa-shopping-cart fa-2x"></i>
+    </div>
+  </ul>
+  </ul>
+
+  <nav class="navbar second_nav font_bold">
+    <ul class="d_flex content_start item_center">
+      <button class="navbar-toggler slider" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <li>All</li>
+      <li>Today's Deal</li>
+      <li>Customer Service</li>
+      <li>Registry</li>
+      <li>Gift Cards</li>
+      <li>Sell</li>
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </ul>
+  </nav>
+
+
+  <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://m.media-amazon.com/images/I/51PG7WjcL7L._SX1500_.jpg" class="d-block w-100" alt="...">
+
+        <div class="carousel-caption d-none d-md-block">
+
+          <div class="alert alert-light" role="alert">
+            You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. <a href="#" class="alert-link">Click here to go to amazon.in</a>
+          </div>
+
+
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://m.media-amazon.com/images/I/61jovjd+f9L._SX3000_.jpg" class="d-block w-100" alt="">
+      </div>
+      <div class="carousel-item">
+        <img src="https://m.media-amazon.com/images/I/61DUO0NqyyL._SX3000_.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="container-fluid d_flex between">
+
+    <div class="card shadow" style="width: 19rem;">
+      <div class="card-body">
+        <h5 class="card-title px-3 font_bold">Gamming Accessories</h5>
+        <div class="nested_item">
+
+          <img class="" src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Headset_2x._SY232_CB667159060_.jpg" alt="">
+          <img class="" src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Keyboard_2x._SY232_CB667159063_.jpg" alt="">
+          <img class="my-5" src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Mouse_2x._SY232_CB667159063_.jpg" alt="">
+
+          <img class="my-5" src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Chair_2x._SY232_CB667159060_.jpg" alt="">
+
+        </div>
+        <h6 class="card-subtitle mb-2 text-muted px-3">Essentials for Gamers</h6>
+        <a href="#" class="card-link px-3">See more</a>
+      </div>
+    </div>
+    <div class="card shadow" style="width: 19rem;">
+      <div class="card-body">
+        <h5 class="card-title px-3 font_bold">Shop by Category</h5>
+        <div class="nested_item nested_item_2 d_flex content_center">
+
+          <img class="" src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2019/February/Dashboard/computer240x._SY170_CB468850970_.jpg" alt="">
+          <img class="" src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2019/August/DashboardCard/PS4_240X._SY170_CB438749318_.jpg" alt="">
+          <img class="my-5" src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2019/February/Dashboard/Baby240X._SY170_CB468850909_.jpg" alt="">
+
+          <img class="my-5" src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2019/February/Dashboard/Toys240X._SY170_CB468851693_.jpg" alt="">
+
+        </div>
+        <h6 class="card-subtitle mb-2 text-muted px-3">Computer, Games, Baby, Toys etc.</h1>
+          <a href="#" class="card-link px-3">Shop now</a>
+      </div>
+    </div>
+    <div class="card shadow" style="width: 20rem;">
+      <div class="card-body single_item_box">
+        <h5 class="card-title px-3 font_bold">Electronics</h5>
+        <img class="mb-5" src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Electronics_2x._SY608_CB432774322_.jpg" alt="">
+        <a href="#" class="card-link px-3">See more</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid d_flex between my-3">
+    <div class="card shadow" style="width: 19rem;">
+      <div class="card-body single_item_box">
+        <h5 class="card-title px-3 font_bold">Shop Father's Day Gifts</h5>
+        <img class="mb-5" src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2022/FathersDay/Fuji_FathersDay22_Dash_2X._SY608_CB636880260_.jpg" alt="">
+        <a href="#" class="card-link px-3">See more</a>
+      </div>
+    </div>
+    <div class="card shadow" style="width: 19rem; height: 25vh;">
+      <div class="card-body single_item_box">
+        <h5 class="card-title px-3 font_bold">Dresses</h5>
+        <img class="mb-5" src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2022/February/DashboardCards/Fuji_dash_dress_2X._SY608_CB626369146_.jpg" alt="">
+        <a href="#" class="card-link px-3">See more</a>
+      </div>
+    </div>
+
+    <div class="world_wide">
+      <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/October/Fuji_D2_45M_en_US_2x._CB418309979_.jpg" alt="">
+      <div class="card mt-3 shadow" style="width: 20rem; height: 10.2vh;">
+        <div class="card-body">
+          <h3 class="card-title px-3 font_bold">Sign in for the best experience</h3>
+          <button class="btn btn-warning mt-3 mx-3 sign_in_secure" type="button">Sign in securely</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card text-center">
+    <div class="card-header p-4">
+
+    </div>
+    <div class="card-body">
+      <p class="card-text mb-0">See personalized recommendations </p>
+      <a href="#" class="btn btn-warning footer_btn">Sign in</a>
+      <br>
+      <span>New costomer?</span> <span class="learn_more">start here</span>
+    </div>
+    <div class="card-footer text-muted p-3">
+
+    </div>
+  </div>
+
+  <a style="text-decoration: none;" href="#">
+    <div class="back_to_top t_white">
+      Back to top
+    </div>
+  </a>
+
+
+
+
+  <footer class="py-5 px-3 bg-dark t_white">
+    <div class="row d_flex between">
+      <div class="col-2">
+        <h4>Get to Know Us</h4><hr>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-3">Career</li>
+          <li class="nav-item mb-3">Blog</li>
+          <li class="nav-item mb-3">About Amazona</li>
+          <li class="nav-item mb-3">Investor Relations</li>
+          <li class="nav-item mb-3">Amazon Devices</li>
+          <li class="nav-item mb-3">Amazon Science</li>
+        </ul>
+      </div>
+
+      <div class="col-2">
+        <h4>Make Money with Us</h4><hr>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-3">Sell products on Amazon</li>
+          <li class="nav-item mb-3">Sell on Amazon Buisness</li>
+          <li class="nav-item mb-3">Sell apps on Amazon</li>
+          <li class="nav-item mb-3">Become an Affiliate</li>
+          <li class="nav-item mb-3">Advertise Your Products</li>
+          <li class="nav-item mb-3"> Self-Publish with Us</li>
+          <li class="nav-item mb-3">Host an Amazon Hub</li>
+          <li class="nav-item mb-3">See More Make Money with Us</li>
+        </ul>
+      </div>
+
+      <div class="col-2">
+        <h4>Amazon Payment Products</h4><hr>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-3">Amazon Business Card</li>
+          <li class="nav-item mb-3">Shop with Points</li>
+          <li class="nav-item mb-3">Reload Your Balance</li>
+          <li class="nav-item mb-3">Amazon Currency Converter</li>
+        </ul>
+      </div>
+
+      <div class="col-2">
+        <h4>Let Us Help You</h4><hr>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-3">Amazon and COVID-19</li>
+          <li class="nav-item mb-3">Your Account</li>
+          <li class="nav-item mb-3">Your Orders</li>
+          <li class="nav-item mb-3">Shipping Rates & Policies</li>
+          <li class="nav-item mb-3">Returns & Replacements</li>
+          <li class="nav-item mb-3">Manage Your Content and Devices</li>
+          <li class="nav-item mb-3">Amazon Assistant</li>
+          <li class="nav-item mb-3">Help</li>
+        </ul>
+      </div>
+
+
+    </div>
+
+
+  </footer>
+
+  <!-- BOOTSRAPS'S LINKS STARTS FROM HERE -IGNORE THIS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <!-- LOCATION ICON SOURCE -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
